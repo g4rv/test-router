@@ -5,10 +5,10 @@ const NotHome = () => {
 		<div>
 			NotHome
 			<br />
-			<Link to={'/test-router/'}>home</Link>
+			<Link to={'/'}>home</Link>
 			<br />
 			<br />
-			<Link to={'/test-router/some-other/124123'}>Some other</Link>
+			<Link to={'/some-other/124123'}>Some other</Link>
 		</div>
 	);
 };
