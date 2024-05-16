@@ -13,7 +13,7 @@ const router = createBrowserRouter(
 		{ path: 'not-home', element: <NotHome /> },
 		{ path: 'some-other/:some', element: <SomeOther /> },
 	],
-	{ basename: 'https://g4rv.github.io/test-router/' }
+	{ basename: '/test-router/' }
 );
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<RouterProvider router={router} />
