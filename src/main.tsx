@@ -4,14 +4,17 @@ import App from './App';
 import './index.css';
 import NotHome from './pages/NotHome';
 import SomeOther from './pages/SomeOther';
-const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-	},
-	{ path: 'not-home', element: <NotHome /> },
-	{ path: 'some-other/:some', element: <SomeOther /> },
-]);
+const router = createBrowserRouter(
+	[
+		{
+			path: '/',
+			element: <App />,
+		},
+		{ path: 'not-home', element: <NotHome /> },
+		{ path: 'some-other/:some', element: <SomeOther /> },
+	],
+	{ basename: '/test-router' }
+);
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<RouterProvider router={router} />
 );
