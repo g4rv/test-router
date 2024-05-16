@@ -6,11 +6,11 @@ import NotHome from './pages/NotHome';
 import SomeOther from './pages/SomeOther';
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: 'test-router/',
 		element: <App />,
 	},
-	{ path: 'not-home', element: <NotHome /> },
-	{ path: 'some-other/:some', element: <SomeOther /> },
+	{ path: 'test-router/not-home', element: <NotHome /> },
+	{ path: 'test-router/some-other/:some', element: <SomeOther /> },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<RouterProvider router={router} />

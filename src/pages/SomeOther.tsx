@@ -8,10 +8,10 @@ const SomeOther = () => {
             <br />
             {some}
 			<br />
-			<Link to={'/'}>home</Link>
+			<Link to={'/test-router/'}>home</Link>
 			<br />
 			<br />
-			<Link to={'/not-home'}>Some other</Link>
+			<Link to={'/test-router/not-home'}>Some other</Link>
 		</div>
 	);
 };
